@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+var d = new Date();
+var days = ["Sunday","Monday","Tuesday","Wednesday","Thrusday","Friday","Saturday"];
+document.getElementById("demo").innerHTML = " Today Day Is: " + days[d.getDay()];
+</script>
+
+<script>
+var d = new Date();
+var ampm = d.getHours() <= 12 ? "AM" : "PM";
+var time = d.getHours() - 12 + " " + ampm + ":" + d.getMinutes() + ":" + d.getSeconds();
+
+document.getElementById("demo1").innerHTML = " Time Is: " + time;
+</script>
+  </body>
+</html>
