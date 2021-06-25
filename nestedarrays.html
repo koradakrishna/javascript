@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>Nested Arrays</p>
+    <p id="demo"></p>
+    <script>
+      let x = "";
+      const myObj = {
+        store: "More",
+        location:"vijayawada",
+        drinks: [
+            {name:"cocacola", caterogries:["Coke", "Fanta", "Maaza"]},
+            {name:"Pepsi", caterogries:["Slice", "Mirandaa"]}
+        ]
+      }
+
+      for (let i in myObj.drinks) {
+        x += "<h3>" + myObj.drinks[i].name + "</h3>";
+          for (let j in myObj.drinks[i].caterogries) {
+            x += myObj.drinks[i].caterogries[j] + "<br>"
+          }
+      }
+
+      document.getElementById("demo").innerHTML = x;
+    </script>
+  </body>
+</html>

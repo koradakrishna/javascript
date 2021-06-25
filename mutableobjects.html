@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>creating mutable objects.</p>
+    <p id="demo"></p>
+    <script type="text/javascript">
+      const person = {
+        firstName:"krishna",
+        lastName:"chaitanya",
+        city:"vijayawada",
+        state:"AP"
+      };
+
+      const x = person;
+      x.city = "guntur";
+      document.getElementById("demo").innerHTML =
+      person.firstName + " lives in city " + person.city; 
+    </script>
+
+  </body>
+</html>
