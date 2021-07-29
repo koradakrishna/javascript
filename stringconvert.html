@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3>string to uppercase</h3>
+    <button onclick="myFunction()">Try it</button>
+    <p id="upper">Hello World!</p>
+    <script>
+      function myFunction() {
+        var text = document.getElementById("upper").innerHTML;
+        document.getElementById("upper").innerHTML = text.toUpperCase();
+      }
+      </script>
+
+      <h3>sting to lowercase</h3>
+      <button onclick="myFunction1()">Try it</button>
+      <p id="lower">Hello World!</p>
+      <script>
+        function myFunction1() {
+          var txt = document.getElementById("lower").innerHTML;
+          document.getElementById("lower").innerHTML = txt.toLowerCase();
+
+        }
+        </script>
+      </body>
+
+</html>

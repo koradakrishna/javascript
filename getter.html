@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2>Getter allows to get objects</h2>
+    <p id="demo"></p>
+
+    <script>
+      const cars = {
+        name: "Maruti",
+        model: "Desire",
+        year: 2020,
+        get lang() {
+          return this.year;
+        }
+      };
+      document.getElementById("demo").innerHTML = cars.year;
+    </script>
+
+  </body>
+</html>

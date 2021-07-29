@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2>Setter allows to set objects</h2>
+    <p id="demo"></p>
+
+    <script>
+      const cars = {
+        name: "Maruti",
+        model: "Desire",
+        year: "",
+        set lang(year) {
+          this.year = lang.toUpperCase();
+        }
+      };
+
+      cars.year = "2020";
+
+      document.getElementById("demo").innerHTML = cars.year;
+        </script>
+  </body>
+</html>
