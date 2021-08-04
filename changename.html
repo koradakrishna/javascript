@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<h3> add a new method to an existing object </h3>
+
+    <p id="demo"></p>
+
+    <script>
+
+      function Car(model, color, cc, year) {
+        this.Brand = model;
+        this.Color = color;
+        this.Cc = cc;
+        this.Year = year;
+        this.changeName = function (color) {
+          this.Color = color;
+        }
+      }
+
+      const myCar = new Car("volvo s30", "White", "3300", 2021);
+
+      myCar.changeName("black");
+
+      document.getElementById("demo").innerHTML =
+      "My Car Color Is " + myCar.Color;
+    </script>
+  </body>
+</html>
