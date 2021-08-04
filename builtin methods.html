@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Javascript Builtin Method</h1>
+<p id="demo"></p>
+    <script>
+     const person = {
+       firstName: "Krishna",
+       lastName: "Chaitanya",
+       id: 1122,
+     };
+     person.name = function() {
+       return (this.firstName + " " + this.lastName).toUpperCase();
+
+     };
+ document.getElementById("demo").innerHTML =
+ "I am " + person.name();
+    </script>
+  </body>
+</html>

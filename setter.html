@@ -11,16 +11,16 @@
     <script>
       const cars = {
         name: "Maruti",
-        model: "Desire",
-        year: "",
-        set lang(year) {
-          this.year = lang.toUpperCase();
+        model: "",
+        year: 2020,
+        set lang(model) {
+          this.model = model.toUpperCase();
         }
       };
 
-      cars.year = "2020";
+      cars.lang = "dezire";
 
-      document.getElementById("demo").innerHTML = cars.year;
+      document.getElementById("demo").innerHTML = cars.model;
         </script>
   </body>
 </html>

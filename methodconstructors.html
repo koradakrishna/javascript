@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h3> constructor function </h3>
+
+    <p id="demo"></p>
+
+    <script>
+
+      function Car(model, color, cc, year) {
+        this.Brand = model;
+        this.Color = color;
+        this.Cc = cc;
+        this.Year = year;
+        this.name = function() {
+          return this.Brand + " and color is " + this.Color
+        };
+      }
+
+      const myCar = new Car("volvo s30", "White", "3300", 2021);
+
+      document.getElementById("demo").innerHTML =
+      "My Car Is " + myCar.name();
+
+
+
+    </script>
+  </body>
+</html>

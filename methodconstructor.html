@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3>Adding Method to object contructors</h3>
+
+    <p id="demo"></p>
+
+    <script>
+
+      function Cars(model, color, year) {
+        this.carName = model;
+        this.carColor = color;
+        this.carYear = year;
+      }
+
+      const myCollection = new Cars("s30", "red", 2018);
+
+      myCollection.name = function() {
+        return this.carName + " " + this.carColor + " " + this.carYear;
+      }
+      document.getElementById("demo").innerHTML =
+      " My Car Is " + myCollection.name();
+    </script>
+  </body>
+</html>

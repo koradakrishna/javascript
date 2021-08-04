@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2>javasxript object contructors</h2>
+
+    <p id="demo"></p>
+
+    <script>
+
+      function Car(model, color, year) {
+        this.Name = model;
+        this.Color = color;
+        this.Year = year;
+      }
+
+      function Bike(model, color, cc) {
+        this.Name = name;
+        this.Color = color;
+        this.Cc = cc;
+      }
+
+      const myCollection = new Car("s30", "red", 2018);
+      const myBike = new Bike("Xtreme", "Black", 150);
+
+      document.getElementById("demo").innerHTML =
+      "My Car  Is " + myCollection.Name +  "." + "<br>" +
+      "My Bike Is " + myBike.Cc + " cc " + ".";
+    </script>
+  </body>
+</html>
