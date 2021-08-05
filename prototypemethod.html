@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+     <h2> prototype property allows to add methods to object constructors</h2>
+
+     <script>
+
+         function Car(model, color, year) {
+          this.Brand = model;
+          this.Color = color;
+          this.Year = year;
+
+        }
+
+        Car.prototype.name = function() {
+          return this.Brand + " " + this.Year
+        };
+
+        const myCar = new Car("volvo s90", "blue", 2020);
+        document.getElementById("demo").innerHTML = "My Car " + myCar.name();
+
+
+     </script>
+  </body>
+</html>

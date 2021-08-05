@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2> Object.getOwnPropertyNames </h2>
+
+    <p id="demo"></p>
+
+    <script>
+      const car = {
+        modelName = "VolvoS30",
+        carColor = "Silver",
+        carCc = 3300,
+        mfdYear = 2020
+
+      };
+
+      Object.defineProperty(car, "modelName", {enumerable:false});
+
+      document.getElementById("demo").innerHTML =
+      Object.getOwnPropertyNames(car);
+
+      </script>
+  </body>
+</html>
